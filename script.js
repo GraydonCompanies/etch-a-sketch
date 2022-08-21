@@ -34,14 +34,28 @@ function destroyGrid() {
 }
 
 function enableDraw() {
-    
+
+    //Add mousedown/mouseup event listener to mainContainer
+    let mouseDown = false;
+
+    const mainContainer = document.querySelector('.mainContainer');
+    mainContainer.addEventListener('mousedown', () => {
+        mouseDown = true;
+    })
+
+    mainContainer.addEventListener('mouseup', () => {
+        mouseDown = false;
+    })
+
     //Create a reference to all gridRow nodes
     const gridColumns = document.querySelectorAll('.gridColumn');
-    
+
     //Add mouseover event listener to all gridRow nodes which changes color of node
-    for (const gridColumn of gridColumns){
+    for (const gridColumn of gridColumns) {
         gridColumn.addEventListener('mouseover', () => {
-            gridColumn.style.backgroundColor = 'coral';
+            if (mouseDown == true) {
+                gridColumn.style.backgroundColor = 'coral';
+            }
         })
     }
 }
