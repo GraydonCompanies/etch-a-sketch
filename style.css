@@ -1,0 +1,30 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.mainContainer {
+    background-color: lightgrey;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gridRow {
+    width: 100%;
+    flex: 1;
+    display: flex;
+}
+
+.gridBox {
+    flex: 1;
+    background-color: cornflowerblue;
+    /*border: 1px solid rgb(69, 134, 255);*/
+}
+
+.gridBox:hover {
+    background-color: coral;
+}
