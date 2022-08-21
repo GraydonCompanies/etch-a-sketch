@@ -53,7 +53,7 @@ function enableDraw() {
     //Add mouseover event listener to all gridRow nodes which changes color of node
     for (const gridColumn of gridColumns) {
         gridColumn.addEventListener('mouseover', () => {
-            if (mouseDown == true) {
+            if (mouseDown) {
                 gridColumn.style.backgroundColor = 'coral';
                 gridColumn.style.borderColor = 'rgb(255, 101, 45)';
             }
