@@ -8,8 +8,6 @@
     background-color: lightgrey;
     display: flex;
     height: 500px;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
 
@@ -19,12 +17,12 @@
     display: flex;
 }
 
-.gridBox {
+.gridColumn {
     flex: 1;
     background-color: cornflowerblue;
-    /*border: 1px solid rgb(69, 134, 255);*/
+    border: 1px solid rgb(69, 134, 255);
 }
 
-.gridBox:hover {
+.gridColumn:hover {
     background-color: coral;
 }
