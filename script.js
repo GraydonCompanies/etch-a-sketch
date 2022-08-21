@@ -32,3 +32,16 @@ function destroyGrid() {
         mainContainer.removeChild(gridRow);
     }
 }
+
+function enableDraw() {
+    
+    //Create a reference to all gridRow nodes
+    const gridColumns = document.querySelectorAll('.gridColumn');
+    
+    //Add mouseover event listener to all gridRow nodes which changes color of node
+    for (const gridColumn of gridColumns){
+        gridColumn.addEventListener('mouseover', () => {
+            gridColumn.style.backgroundColor = 'coral';
+        })
+    }
+}
