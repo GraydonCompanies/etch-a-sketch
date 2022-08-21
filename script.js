@@ -1,4 +1,4 @@
-function createGrid(rows, columns) {
+function createGrid(columns, rows) {
 
     //Check that input does not exceed 100 rows or columns
     if (rows > 100 || columns > 100) {
