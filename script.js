@@ -55,6 +55,7 @@ function enableDraw() {
         gridColumn.addEventListener('mouseover', () => {
             if (mouseDown == true) {
                 gridColumn.style.backgroundColor = 'coral';
+                gridColumn.style.borderColor = 'rgb(255, 101, 45)';
             }
         })
     }
