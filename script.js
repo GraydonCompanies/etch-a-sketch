@@ -1,3 +1,6 @@
+createGrid(30,30);
+enableDraw();
+
 function createGrid(columns, rows) {
 
     //Check that input does not exceed 100 rows or columns
@@ -38,12 +41,11 @@ function enableDraw() {
     //Add mousedown/mouseup event listener to mainContainer
     let mouseDown = false;
 
-    const mainContainer = document.querySelector('.mainContainer');
-    mainContainer.addEventListener('mousedown', () => {
+    document.addEventListener('mousedown', () => {
         mouseDown = true;
     })
 
-    mainContainer.addEventListener('mouseup', () => {
+    document.addEventListener('mouseup', () => {
         mouseDown = false;
     })
 
